@@ -140,7 +140,7 @@ DATABASES = {
         'HOST': os.environ.get('DATABASE_HOST'),
         'PORT': os.environ.get('DATABASE_PORT'),
     },
-    '': {
+    'db2': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': os.environ.get('DATABASE_NAME_2'),
         'USER': os.environ.get('DATABASE_USER_2'),
