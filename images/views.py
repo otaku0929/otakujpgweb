@@ -10,7 +10,7 @@ from rest_framework.decorators import list_route
 
 
 # single-databases
-def index_old(request):
+def index(request):
     return render(request, 'index.html', {
         'images': Image.objects.values('id', 'Url').order_by('-CreateDate')
     })
