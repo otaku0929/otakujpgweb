@@ -16,24 +16,6 @@ def index_old(request):
     })
 
 
-# multiple-databases
-def index(request):
-    images_seq = []
-    for db_name in settings.DATABASES:
-        query = Image.objects.using(db_name).all()
-        for data in query:
-            dict_image = {
-                'id': data.id,
-                'Url': data.Url,
-                'CreateDate': data.CreateDate
-            }
-            images_seq.append(dict_image)
-    images_seq = sorted(images_seq, key=lambda x: x['CreateDate'], reverse=True)
-    return render(request, 'index.html', {
-        'images': images_seq
-    })
-
-
 # Create your views here.
 class ImageViewSet(viewsets.ModelViewSet):
     """
