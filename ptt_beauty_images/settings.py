@@ -80,14 +80,6 @@ DATABASES = {
         'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
         'HOST': os.environ.get('DATABASE_HOST'),
         'PORT': os.environ.get('DATABASE_PORT'),
-    },
-    'db2': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('DATABASE_NAME_2'),
-        'USER': os.environ.get('DATABASE_USER_2'),
-        'PASSWORD': os.environ.get('DATABASE_PASSWORD_2'),
-        'HOST': os.environ.get('DATABASE_HOST_2'),
-        'PORT': os.environ.get('DATABASE_PORT_2'),
     }
 }
 
