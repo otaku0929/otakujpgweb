@@ -22,6 +22,6 @@ router.register(r'image', ImageViewSet)
 
 urlpatterns = [
     #url(r'^admin/', admin.site.urls),
-    url(r'^$', images.views.index, name='index'),
+    url(r'^$', urls.index),
     url(r'^api/', include(router.urls)),
 ]
