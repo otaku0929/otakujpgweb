@@ -129,4 +129,4 @@ STATICFILES_DIRS = (
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-#FILE_CHARSET = 'utf-8'
+FILE_CHARSET = 'utf-8'
